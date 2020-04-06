@@ -7,10 +7,11 @@ php bin/cli db:create -n
 echo "🏗 Updating database..."
 php vendor/bin/doctrine-migrations migrations:migrate --no-interaction --allow-no-migration
 
-echo "🏗 Generating proxies..."
-rm -rf /app/data/proxies/*
-php vendor/bin/doctrine orm:generate-proxies -n
+echo "🏗 Clearing ORM cache..."
+php vendor/bin/doctrine orm:clear-cache:metadata -n
 
+echo "🏗 Generating proxies..."
+php vendor/bin/doctrine orm:generate-proxies -n
 
 echo "✅ Starting swoole..."
 # When restarting the container, swoole might think it is already in execution
