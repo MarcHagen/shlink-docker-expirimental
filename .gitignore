@@ -1,3 +1,4 @@
 .shlink
 env/shlink.env
 env/redis.env
+docker-compose.override.yml
