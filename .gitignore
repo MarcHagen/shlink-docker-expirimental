@@ -1,0 +1,3 @@
+.shlink
+env/shlink.env
+env/redis.env

@@ -1,0 +1,27 @@
+.shlink/config/autoload/*local*
+.shlink/data/infra/
+.shlink/data/cache/*
+.shlink/data/log/*
+.shlink/data/locks/*
+.shlink/data/proxies/*
+.shlink/data/migrations_template.txt
+.shlink/data/GeoLite2-City.*
+.shlink/data/database.sqlite
+.shlink/data/shlink-tests.db
+.shlink/docker/
+.shlink/vendor/
+.shlink/docs/
+.shlink/hooks/
+.shlink/composer.lock
+.shlink/indocker
+.shlink/docker-*
+.shlink/infection.json
+.shlink/phpstan.neon
+.shlink/build*
+.shlink/Dockerfile
+.shlink/.*
+.shlink/php*.xml*
+
+# Global remove
+**/.gitignore
+**/test*
