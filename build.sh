@@ -167,7 +167,7 @@ fi
 # --build-arg
 DOCKER_BUILD_ARGS+=(
   --build-arg "SHLINK_PATH=${SHLINK_PATH}"
-  --build-arg "PROJECT_VERSION=${PROJECT_VERSION}"
+  --build-arg "PROJECT_VERSION=${PROJECT_VERSION//v}"
 )
 
 echo "🐳 Building the Docker image version '${PROJECT_VERSION}'."
